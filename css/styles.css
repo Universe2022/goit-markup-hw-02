@@ -11,12 +11,41 @@
   --dark-blue: #188ce8;
 }
 
+
+.reset
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 body {
   font-family: roboto, sans-serif;
 }
 
-.header {
-}
 
 .list {
   list-style: none;
@@ -30,12 +59,36 @@ body {
   background: var(--white-background);
 }
 
-.header-link {
+.container{
+  width: 1170px;
+  margin:0 auto ;
+}
+
+/*------------------------Header-------------------------*/
+.header{
+  background-color: var(--white);
+}
+
+
+
+.header-list .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--dark-title);
+}
+
+.header-list{
+  display: flex;
+  gap: 50px; 
+  padding-left: 93px;
+  padding-right: 344px;
+}
+
+header{
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-logo {
@@ -72,7 +125,7 @@ body {
 }
 
 .header-mail:hover,
-.header-mail:focus {
+:focus {
   color: var(--blue);
 }
 
@@ -85,8 +138,36 @@ body {
 }
 
 .header-tel:hover,
-.header-tel:focus {
+:focus {
   color: var(--blue);
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
+  color: var(--blue);
+}
+
+.header-navigation{
+  display: flex;
+  align-items: center;
+}
+
+.header-container{
+  display: flex;
+}
+
+.header-contact-list{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/*----------------------------Main---------------------------*/
+
+.main-section{
+  background-color: var(--dark-section);
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .main-section {
@@ -105,7 +186,6 @@ body {
 }
 
 .main-btn {
-  cursor: pointer;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -115,6 +195,10 @@ body {
   background-color: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  margin-left: 492px;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 button {
@@ -124,7 +208,6 @@ button {
 button:hover {
   background-color: var(--dark-blue);
   color: var(--white);
-
 }
 
 button:focus {
@@ -132,7 +215,22 @@ button:focus {
   color: var(--white);
 }
 
-.main-second-section {
+.main-btn{
+  padding: 10px 32px;
+}
+
+
+
+/*------------Main item---------*/
+
+.main-item{
+  background-color: var(--white);
+  padding-top: 94px;
+}
+
+.main-item-list{
+  display: flex;
+  gap: 30px;
 }
 
 .main-item-title {
@@ -151,8 +249,15 @@ button:focus {
   line-height: 1.71;
 
   letter-spacing: 0.03em;
-
+  line-height: 24px;
   color: var(--dark-text);
+}
+
+
+/*--------------------About-------------------*/
+
+.about{
+  background-color: var(--white);
 }
 
 .about-position {
@@ -162,7 +267,18 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-title);
+
+  padding-top: 94px;
 }
+
+.about-position-list{
+  display: flex;
+  gap: 50px;
+  padding-bottom: 94px;
+  padding-top: 50px;
+}
+
+/*----------workers---------*/
 
 .about-workers {
   font-weight: 700;
@@ -171,10 +287,11 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-title);
+  padding-top: 94px;
 }
 
 .workers {
-  background-color: #f5f4fa;
+  background-color: var(--gray-section);
 }
 
 .about-workers-name {
@@ -184,6 +301,9 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-title);
+
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .about-workers-text {
@@ -193,10 +313,24 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-text);
+
+  padding-bottom: 30px;
 }
 
 .worker-photo {
   background-color: var(--white);
+}
+
+.about-workers-list{
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+/*-------------Contacts Adress-------------*/
+.about-contacts{
+  padding-top: 20px;
 }
 
 .about-contacts-map {
@@ -213,6 +347,8 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  padding-top: 9px;
 }
 
 .about-contacts-tel {
@@ -221,15 +357,32 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  padding-top: 9px;
+}
+
+.contacts-adress {
+  background-color: var(--dark-section);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts-adresses {
+  font-style: normal;
+}
+
+/*------------------Btn-list--------------------------*/
+
+.portfolio-section{
+  background-color:var(--white-background);
 }
 
 .btn-list {
-  cursor: pointer;
-  width: 130px;
+  
   height: 38px;
   left: 957px;
   top: 174px;
-  background: #f5f4fa;
+  background: var(--gray-section);
   border-radius: 4px;
 
   font-family: "Roboto";
@@ -238,6 +391,10 @@ button:focus {
   line-height: 26px;
   letter-spacing: 0.03em;
   color: var(--dark-title);
+}
+
+.btn-list{
+  padding: 6px 22px;
 }
 
 .section-btn-link {
@@ -254,7 +411,25 @@ button:focus {
   border-radius: 4px;
 }
 
+.section-btn{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 56px;
+}
+
+/*----------------------Picture------------------------------*/
+
 .picture {
+}
+
+.picture-image{
+  background-color: var(--white);
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #EEEEEE;
+  padding-bottom: 20px;
 }
 
 .picture-title {
@@ -263,6 +438,10 @@ button:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--dark-title);
+
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 
 .picture-text {
@@ -271,33 +450,20 @@ button:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--dark-text);
+
+  padding-left: 24px;
 }
 
-.contacts-adress {
-  background-color: var(--dark-section);
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
 }
 
-.contacts-adresses {
-  font-style: normal;
-}
 
-.header-list .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--dark-title);
-}
 
-.header-list .link:hover,
-.header-list .link:focus {
-  color: var(--blue);
-}
 
-.header-link-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--blue);
-}
+
+
+
