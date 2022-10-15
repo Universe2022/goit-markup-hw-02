@@ -11,8 +11,6 @@
   --dark-blue: #188ce8;
 }
 
-
-.reset
 p,
 h1,
 h2,
@@ -41,11 +39,10 @@ img {
   height: auto;
 }
 
-
 body {
   font-family: roboto, sans-serif;
+  background: var(--white);
 }
-
 
 .list {
   list-style: none;
@@ -56,20 +53,22 @@ body {
 }
 
 .site-body {
-  background: var(--white-background);
+  background: var(--white);
 }
 
-.container{
-  width: 1170px;
-  margin:0 auto ;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*------------------------Header-------------------------*/
-.header{
+.header {
   background-color: var(--white);
+  border-bottom: 1px;
+  border-color: #ececec;
 }
-
-
 
 .header-list .link {
   font-weight: 500;
@@ -79,14 +78,14 @@ body {
   color: var(--dark-title);
 }
 
-.header-list{
+.header-list {
   display: flex;
-  gap: 50px; 
-  padding-left: 93px;
-  padding-right: 344px;
+  gap: 50px;
+  margin-left: 93px;
+  margin-right: 344px;
 }
 
-header{
+header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -147,16 +146,16 @@ header{
   color: var(--blue);
 }
 
-.header-navigation{
+.header-navigation {
   display: flex;
   align-items: center;
 }
 
-.header-container{
+.header-container {
   display: flex;
 }
 
-.header-contact-list{
+.header-contact-list {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -164,10 +163,10 @@ header{
 
 /*----------------------------Main---------------------------*/
 
-.main-section{
+.main-section {
   background-color: var(--dark-section);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .main-section {
@@ -196,9 +195,11 @@ header{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  margin-left: 492px;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  display: block;
+  
 }
 
 button {
@@ -215,22 +216,22 @@ button:focus {
   color: var(--white);
 }
 
-.main-btn{
+.main-btn {
   padding: 10px 32px;
 }
 
-
-
 /*------------Main item---------*/
 
-.main-item{
+.main-item {
   background-color: var(--white);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.main-item-list{
+.main-item-list {
   display: flex;
   gap: 30px;
+  flex-basis: 270px;
 }
 
 .main-item-title {
@@ -241,6 +242,8 @@ button:focus {
   text-transform: uppercase;
 
   color: var(--dark-title);
+
+  margin-bottom: 10px;
 }
 
 .main-item-text {
@@ -251,13 +254,15 @@ button:focus {
   letter-spacing: 0.03em;
   line-height: 24px;
   color: var(--dark-text);
-}
 
+  width: 270px;
+}
 
 /*--------------------About-------------------*/
 
-.about{
+.about {
   background-color: var(--white);
+  padding-bottom: 94px;
 }
 
 .about-position {
@@ -267,15 +272,12 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-title);
-
-  padding-top: 94px;
 }
 
-.about-position-list{
+.about-position-list {
   display: flex;
   gap: 50px;
-  padding-bottom: 94px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 /*----------workers---------*/
@@ -287,11 +289,12 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--dark-title);
-  padding-top: 94px;
 }
 
 .workers {
   background-color: var(--gray-section);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-workers-name {
@@ -303,7 +306,7 @@ button:focus {
   color: var(--dark-title);
 
   padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .about-workers-text {
@@ -321,16 +324,18 @@ button:focus {
   background-color: var(--white);
 }
 
-.about-workers-list{
+.about-workers-list {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  margin-top: 50px;
 }
 
 /*-------------Contacts Adress-------------*/
-.about-contacts{
-  padding-top: 20px;
+.about-contacts {
+}
+
+.about-map {
+  margin-top: 20px;
 }
 
 .about-contacts-map {
@@ -347,8 +352,10 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
 
-  padding-top: 9px;
+.about-mail {
+  margin-top: 9px;
 }
 
 .about-contacts-tel {
@@ -357,8 +364,10 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
 
-  padding-top: 9px;
+.about-tel {
+  margin-top: 9px;
 }
 
 .contacts-adress {
@@ -373,17 +382,19 @@ button:focus {
 
 /*------------------Btn-list--------------------------*/
 
-.portfolio-section{
-  background-color:var(--white-background);
+.portfolio-section {
+  background-color: var(--white);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .btn-list {
-  
   height: 38px;
   left: 957px;
   top: 174px;
   background: var(--gray-section);
   border-radius: 4px;
+  border: none;
 
   font-family: "Roboto";
   font-weight: 500;
@@ -393,7 +404,7 @@ button:focus {
   color: var(--dark-title);
 }
 
-.btn-list{
+.btn-list {
   padding: 6px 22px;
 }
 
@@ -411,25 +422,25 @@ button:focus {
   border-radius: 4px;
 }
 
-.section-btn{
+.section-btn {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 56px;
+
+  margin-bottom: 50px;
 }
 
 /*----------------------Picture------------------------------*/
 
 .picture {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.picture-image{
+.picture-image {
+  
   background-color: var(--white);
-  border-width: 0px 0px 1px 0px;
-  border-style: solid;
-  border-color: #EEEEEE;
-  padding-bottom: 20px;
 }
 
 .picture-title {
@@ -438,10 +449,17 @@ button:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--dark-title);
+  letter-spacing: 00.03em;
 
-  padding-left: 24px;
-  padding-top: 20px;
   padding-bottom: 4px;
+}
+
+.picture-text-list {
+  padding: 20px 24px 20px 24px;
+  border-style: solid;
+  border-color: #EEEEEE;
+  border-top: none;
+  width: 370px;
 }
 
 .picture-text {
@@ -458,12 +476,4 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
-
-
-
-
-
-
-
